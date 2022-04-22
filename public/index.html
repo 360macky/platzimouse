@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platzi Mouse</title>
+    <meta
+      name="description"
+      content="Reactive Programming with RxJS course experiment"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="reactive-container">
+      <div class="platzimouse-title">PlatziMouse</div>
+      <div class="circle-01" id="circle-01"></div>
+      <div class="circle-02" id="circle-02"></div>
+      <div class="position-container">
+        <p id="clientX">0</p>
+        ,
+        <p id="clientY">0</p>
+      </div>
+      <div class="reactive-buttons">
+        <button
+          class="button button-01"
+          id="subscribe-button"
+          data-subscription="on"
+        >
+          Subscribe
+        </button>
+        <button
+          class="button button-02"
+          id="transform-button"
+          data-transform="on"
+        >
+          Transform
+        </button>
+      </div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

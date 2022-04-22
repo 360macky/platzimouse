@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+:root {
+  --blue: #131f3c;
+  --skyblue: #05b0f0;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+.reactive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.platzimouse-title {
+  top: 30%;
+  position: absolute;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+}
+
+.circle-01 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+}
+
+.circle-02 {
+  width: 600px;
+  height: 600px;
+  border: 2px solid white;
+}
+
+.circle-01,
+.circle-02 {
+    align-self: center;
+    justify-self: center;
+    transition: all ease 300ms;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.position-container {
+  position: absolute;
+  background-color: var(--skyblue);
+  color: var(--blue);
+  padding: 0rem 2.5rem;
+  border-radius: 80px;
+  font-size: 2.5rem;
+  font-family: "Fira Code", Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+
+.reactive-buttons {
+  position: absolute;
+  bottom: 20%;
+}
+
+.button {
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  color: var(--skyblue);
+  border: 2px solid var(--skyblue);
+}
+
+.button-01 {
+  margin-right: 30vw;
+}
